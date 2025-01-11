@@ -7,7 +7,8 @@ namespace TestQuestao5
     {
         //private readonly Mock<IContaCorrenteProvider> _contaCorrenteProvider;
         //private readonly Mock<IContaCorrenteRepository> _contaCorrenteRepository;
-        private List<object>? returnValue = null;
+        private List<ContaCorrente>? returnProducts = null;
+        private SaldoResponse? returnMoviment = null;
 
         //public UnitTest()
         //{
@@ -19,9 +20,9 @@ namespace TestQuestao5
         public void GetTeste()
         {
             Mock<IContaCorrenteProvider> contaCorrenteR = new Mock<IContaCorrenteProvider>();
-            contaCorrenteR.Setup(m => m.GetAll()).Returns(returnValue);
+            contaCorrenteR.Setup(m => m.GetAll()).Returns(returnProducts);
 
-            List<object>? result = contaCorrenteR.Object.GetAll();
+            List<ContaCorrente>? result = contaCorrenteR.Object.GetAll();
         }
 
         [Fact]
@@ -29,7 +30,7 @@ namespace TestQuestao5
         {
             string id = "nnnn";
             Mock<IContaCorrenteProvider> contaCorrenteR = new Mock<IContaCorrenteProvider>();
-            contaCorrenteR.Setup(m => m.Get(id)).Returns(returnValue);
+            contaCorrenteR.Setup(m => m.Get(id)).Returns(returnMoviment);
 
             var result = contaCorrenteR.Object.Get(id);
 
@@ -44,7 +45,23 @@ namespace TestQuestao5
             string id = "F475F943-7067-ED11-A06B-7E5DFA4A16C9";
 
             Mock<IContaCorrenteProvider> contaCorrenteR = new Mock<IContaCorrenteProvider>();
-            contaCorrenteR.Setup(m => m.Get(id)).Returns(returnValue);
+            contaCorrenteR.Setup(m => m.Get(id)).Returns(returnMoviment);
+
+            var result = contaCorrenteR.Object.Get(id);
+
+            // Assert
+            Assert.Null(result);
+        }
+
+
+        [Fact]
+        public void TipoMovimentoInvalido()
+        {
+            //chave de uma conta inativa
+            string id = "F475F943-7067-ED11-A06B-7E5DFA4A16C9";
+
+            Mock<IContaCorrenteProvider> contaCorrenteR = new Mock<IContaCorrenteProvider>();
+            contaCorrenteR.Setup(m => m.Get(id)).Returns(returnMoviment);
 
             var result = contaCorrenteR.Object.Get(id);
 

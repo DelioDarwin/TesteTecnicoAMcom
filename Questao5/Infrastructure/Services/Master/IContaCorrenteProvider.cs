@@ -2,8 +2,8 @@
 {
     public interface IContaCorrenteProvider
     {
-        object? Get(string id);
+        SaldoResponse? Get(string id);
 
-        List<object>? GetAll();
+        List<ContaCorrente>? GetAll();
     }
 }

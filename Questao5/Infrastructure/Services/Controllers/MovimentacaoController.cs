@@ -28,42 +28,24 @@ namespace Questao5.Infrastructure.Services.Controllers
         // GET: api/<ProductController>
         [HttpGet]
         [Route(template: "RetornaConta/{id}")]
-        public object RetornaConta([FromRoute] string id)
+        public SaldoResponse? RetornaConta([FromRoute] string id)
         {
             return contaCorrenteProvider.Get(id);
         }
 
         [HttpGet]
-        public  List<object> GetAll()
+        public  List<ContaCorrente>? GetAll()
         {
             return  contaCorrenteProvider.GetAll();
         }
 
         // POST api/<ProductController>
         [HttpPost]
-        public async Task<string> Create(MovimentoRequest movimentoRequest)
-        {
-            var Empotencia = await contaCorrenteRepository.RetornaEmpotencia(movimentoRequest.ChaveIdempotencia);
+        public async Task<string?> Create(MovimentoRequest movimentoRequest)
+        {    
+            var ret = await contaCorrenteRepository.Create(movimentoRequest);
 
-            if (Empotencia == null)
-            {
-                IdEmpotencia emp = new IdEmpotencia();
-
-                string rawRequestBody = JsonConvert.SerializeObject(movimentoRequest); // works
-
-                emp.Chave_Idempotencia = movimentoRequest.ChaveIdempotencia;
-                emp.Requisicao = rawRequestBody;
-                emp.Resultado = "Movimentação realizada com sucesso!";
-
-                await contaCorrenteRepository.CreateIdEmpotencia(emp);
-                await contaCorrenteRepository.Create(movimentoRequest);
-
-                return "Movimentação realizada com sucesso!";
-            }
-            else
-                return "Esta mesma requisição já foi feita!";
-
-
+            return ret;
         }
 
 

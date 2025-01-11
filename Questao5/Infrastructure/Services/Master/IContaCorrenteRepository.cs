@@ -5,6 +5,6 @@
 
         Task<object?> RetornaEmpotencia(string id);
         Task CreateIdEmpotencia(IdEmpotencia idEmpotencia);
-        Task Create(MovimentoRequest movimentoRequest);
+        Task<string?> Create(MovimentoRequest movimentoRequest);
     }
 }

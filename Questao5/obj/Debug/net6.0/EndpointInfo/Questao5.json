@@ -22,7 +22,24 @@
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/SaldoResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SaldoResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SaldoResponse"
+                }
+              }
+            }
           }
         }
       }
@@ -39,19 +56,25 @@
               "text/plain": {
                 "schema": {
                   "type": "array",
-                  "items": { }
+                  "items": {
+                    "$ref": "#/components/schemas/ContaCorrente"
+                  }
                 }
               },
               "application/json": {
                 "schema": {
                   "type": "array",
-                  "items": { }
+                  "items": {
+                    "$ref": "#/components/schemas/ContaCorrente"
+                  }
                 }
               },
               "text/json": {
                 "schema": {
                   "type": "array",
-                  "items": { }
+                  "items": {
+                    "$ref": "#/components/schemas/ContaCorrente"
+                  }
                 }
               }
             }
@@ -147,6 +170,61 @@
   },
   "components": {
     "schemas": {
+      "ContaCorrente": {
+        "type": "object",
+        "properties": {
+          "idContaCorrente": {
+            "type": "string",
+            "nullable": true
+          },
+          "numero": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nome": {
+            "type": "string",
+            "nullable": true
+          },
+          "ativo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "movimentos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Movimento"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Movimento": {
+        "type": "object",
+        "properties": {
+          "idContaCorrente": {
+            "type": "string",
+            "nullable": true
+          },
+          "idMovimento": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataMovimento": {
+            "type": "string",
+            "nullable": true
+          },
+          "tipoMovimento": {
+            "type": "string",
+            "nullable": true
+          },
+          "valor": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
       "MovimentoRequest": {
         "type": "object",
         "properties": {
@@ -165,6 +243,28 @@
           "tipoMovimento": {
             "type": "string",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SaldoResponse": {
+        "type": "object",
+        "properties": {
+          "numeroConta": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nomeTitular": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataHoraConsulta": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "saldo": {
+            "type": "number",
+            "format": "double"
           }
         },
         "additionalProperties": false

@@ -19,7 +19,7 @@ namespace Questao5.Infrastructure.Services.Master
             this.databaseConfig = databaseConfig;
         }
 
-        public object? Get(string id)
+        public SaldoResponse? Get(string id)
         {
             using var connection = new SqliteConnection(databaseConfig.Name);
 
@@ -56,11 +56,11 @@ namespace Questao5.Infrastructure.Services.Master
                 return null;
         }
                 
-        public List<object>? GetAll()
+        public List<ContaCorrente>? GetAll()
         {
             using var connection = new SqliteConnection(databaseConfig.Name);
-            List<object>? list;
-            list = connection.Query<object>("SELECT * FROM contacorrente ") as List<object>;
+            List<ContaCorrente>? list;
+            list = connection.Query<ContaCorrente>("SELECT * FROM contacorrente ") as List<ContaCorrente>;
   
 
 
