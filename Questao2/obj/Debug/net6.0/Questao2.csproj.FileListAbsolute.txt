@@ -1,0 +1,5 @@
+C:\Users\delio\Downloads\Teste de C# da Ailos\Questao2\obj\Debug\net6.0\Questao2.csproj.AssemblyReference.cache
+C:\Users\delio\Downloads\Teste de C# da Ailos\Questao2\obj\Debug\net6.0\Questao2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\delio\Downloads\Teste de C# da Ailos\Questao2\obj\Debug\net6.0\Questao2.AssemblyInfoInputs.cache
+C:\Users\delio\Downloads\Teste de C# da Ailos\Questao2\obj\Debug\net6.0\Questao2.AssemblyInfo.cs
+C:\Users\delio\Downloads\Teste de C# da Ailos\Questao2\obj\Debug\net6.0\Questao2.csproj.CoreCompileInputs.cache

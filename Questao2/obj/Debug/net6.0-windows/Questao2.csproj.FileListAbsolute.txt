@@ -1,0 +1,17 @@
+C:\Users\delio\Downloads\Teste de C# da Ailos\Questao2\obj\Debug\net6.0-windows\Questao2.csproj.AssemblyReference.cache
+C:\Users\delio\Downloads\Teste de C# da Ailos\Questao2\obj\Debug\net6.0-windows\Questao2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\delio\Downloads\Teste de C# da Ailos\Questao2\obj\Debug\net6.0-windows\Questao2.AssemblyInfoInputs.cache
+C:\Users\delio\Downloads\Teste de C# da Ailos\Questao2\obj\Debug\net6.0-windows\Questao2.AssemblyInfo.cs
+C:\Users\delio\Downloads\Teste de C# da Ailos\Questao2\obj\Debug\net6.0-windows\Questao2.csproj.CoreCompileInputs.cache
+C:\Users\delio\Downloads\Teste de C# da Ailos\Questao2\bin\Debug\net6.0-windows\Questao2.exe
+C:\Users\delio\Downloads\Teste de C# da Ailos\Questao2\bin\Debug\net6.0-windows\Questao2.deps.json
+C:\Users\delio\Downloads\Teste de C# da Ailos\Questao2\bin\Debug\net6.0-windows\Questao2.runtimeconfig.json
+C:\Users\delio\Downloads\Teste de C# da Ailos\Questao2\bin\Debug\net6.0-windows\Questao2.dll
+C:\Users\delio\Downloads\Teste de C# da Ailos\Questao2\bin\Debug\net6.0-windows\Questao2.pdb
+C:\Users\delio\Downloads\Teste de C# da Ailos\Questao2\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\delio\Downloads\Teste de C# da Ailos\Questao2\obj\Debug\net6.0-windows\Questao2.csproj.Up2Date
+C:\Users\delio\Downloads\Teste de C# da Ailos\Questao2\obj\Debug\net6.0-windows\Questao2.dll
+C:\Users\delio\Downloads\Teste de C# da Ailos\Questao2\obj\Debug\net6.0-windows\refint\Questao2.dll
+C:\Users\delio\Downloads\Teste de C# da Ailos\Questao2\obj\Debug\net6.0-windows\Questao2.pdb
+C:\Users\delio\Downloads\Teste de C# da Ailos\Questao2\obj\Debug\net6.0-windows\Questao2.genruntimeconfig.cache
+C:\Users\delio\Downloads\Teste de C# da Ailos\Questao2\obj\Debug\net6.0-windows\ref\Questao2.dll
