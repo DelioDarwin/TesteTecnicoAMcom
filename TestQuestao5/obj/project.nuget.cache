@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "W0T4UsH/UBQ=",
+  "dgSpecHash": "QMBCvBbd+yg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\delio\\Downloads\\Teste de C# da Ailos\\TestQuestao5\\TestQuestao5.csproj",
+  "projectFilePath": "C:\\Users\\delio\\Downloads\\Teste de C# da Ailos\\TesteAMcom\\TesteTecnicoAMcom\\TestQuestao5\\TestQuestao5.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\delio\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\delio\\.nuget\\packages\\coverlet.collector\\6.0.3\\coverlet.collector.6.0.3.nupkg.sha512",

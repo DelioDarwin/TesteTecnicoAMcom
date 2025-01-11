@@ -58,11 +58,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\delio\\Downloads\\Teste de C# da Ailos\\Questao2\\Questao2.csproj",
+      "projectUniqueName": "C:\\Users\\delio\\Downloads\\Teste de C# da Ailos\\TesteAMcom\\TesteTecnicoAMcom\\Questao2\\Questao2.csproj",
       "projectName": "Questao2",
-      "projectPath": "C:\\Users\\delio\\Downloads\\Teste de C# da Ailos\\Questao2\\Questao2.csproj",
+      "projectPath": "C:\\Users\\delio\\Downloads\\Teste de C# da Ailos\\TesteAMcom\\TesteTecnicoAMcom\\Questao2\\Questao2.csproj",
       "packagesPath": "C:\\Users\\delio\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\delio\\Downloads\\Teste de C# da Ailos\\Questao2\\obj\\",
+      "outputPath": "C:\\Users\\delio\\Downloads\\Teste de C# da Ailos\\TesteAMcom\\TesteTecnicoAMcom\\Questao2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
